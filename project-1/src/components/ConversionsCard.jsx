@@ -25,7 +25,12 @@ export default function ConversionsCard({ data }) {
             {identifiers.map((identifier, index) => {
                 const current = currencies[identifier];
                 return (
-                    <p key={index}>
+                    <p
+                        key={index}
+                        style={{
+                            fontWeight: 'bold',
+                        }}
+                    >
                         #{index + 1} - {current.description} = {currencies[identifier].rate_float.toFixed(2)}{' '}
                         {identifier}
                     </p>
