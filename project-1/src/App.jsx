@@ -33,7 +33,10 @@ function App() {
                             );
                             return;
                         } else {
-                            get_conversion_data().then((data) => setData(data));
+                            get_conversion_data().then((data) => {
+                                setData(data);
+                                alert('Sucessfully refreshed data!');
+                            });
                         }
                     }}
                 >
