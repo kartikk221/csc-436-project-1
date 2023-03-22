@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { get_cache_expires_at, get_conversion_data } from './modules/data.cjs';
+import { get_cache_expires_at, get_conversion_data } from './modules/data';
 import RatesCard from './components/RatesCard';
 import ConversionsCard from './components/ConversionsCard';
 import './App.css';
